@@ -61,3 +61,74 @@ button:hover {
     margin-top: 10px;
     border-radius: 5px;
 }
+
+.btn {
+    background-color: green; /* เปลี่ยนเป็นสีเขียว */
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkgreen; /* สีเข้มขึ้นเมื่อชี้ */
+}
+
+.comments {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#user-detail {
+    text-align: left; /* จัดเนื้อหาไปทางซ้าย */
+    max-width: 600px; /* จำกัดความกว้างให้พอดี */
+    margin: auto; /* จัดให้อยู่ตรงกลางของหน้า */
+    padding: 20px;
+    background-color: #f8f9fa; /* สีพื้นหลังอ่อน ๆ */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comments {
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.comments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments li {
+    background: #fff;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.comment-btn:hover {
+    background-color: #218838;
+}
+
+.email-text {
+    color: #007bff; /* สีน้ำเงิน */
+    font-weight: bold; /* ตัวหนา */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+}
+
