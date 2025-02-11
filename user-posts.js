@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const postId = e.target.dataset.postId;
                 const commentsDiv = document.getElementById(`comments-${postId}`);
 
-                if (commentsDiv.style.display === "none") {
+                if (commentsDiv.style.display === "none" || commentsDiv.innerHTML === "") {
                     try {
                         const commentsResponse = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`);
                         if (!commentsResponse.ok) throw new Error("Failed to fetch comments");
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     commentsDiv.style.display = "none";
                     e.target.textContent = "ดูความคิดเห็น";
                 }
-            }, { once: true }); // ป้องกันการเพิ่ม event listener ซ้ำ
+            });
         });
     } catch (error) {
         console.error("Error fetching data:", error);
